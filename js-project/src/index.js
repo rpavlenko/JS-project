@@ -1,0 +1,17 @@
+// eslint-disable-next-line strict
+'use strict';
+
+import 'nodelist-foreach-polyfill';
+import '@babel/polyfill';
+import 'formdata-polyfill';
+import 'es6-promise';
+import 'fetch-polyfill';
+import 'mdn-polyfills/Node.prototype.append';
+import elementClosest from 'element-closest';
+elementClosest(window);
+import smoothscroll from 'smoothscroll-polyfill';
+smoothscroll.polyfill();
+
+import testFirst from './modules/testFirst';
+
+testFirst();
