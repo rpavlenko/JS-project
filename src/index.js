@@ -12,6 +12,7 @@ elementClosest(window);
 import smoothscroll from 'smoothscroll-polyfill';
 smoothscroll.polyfill();
 
-import testFirst from './modules/testFirst';
+import selectClub from './modules/selectClub';
 
-testFirst();
+
+selectClub();
