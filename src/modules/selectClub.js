@@ -22,6 +22,7 @@ const selectClub = () => {
       target = target.closest('.clubs-list');
       if (!target) {
         club.style.display = 'none';
+        opacity = 0;
       }
     }
   });
