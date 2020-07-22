@@ -14,5 +14,4 @@ smoothscroll.polyfill();
 
 import selectClub from './modules/selectClub';
 
-
 selectClub();
