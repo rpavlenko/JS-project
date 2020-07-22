@@ -13,5 +13,7 @@ import smoothscroll from 'smoothscroll-polyfill';
 smoothscroll.polyfill();
 
 import selectClub from './modules/selectClub';
+import freeVisitPopUp from './modules/freeVisitPopUp';
 
 selectClub();
+freeVisitPopUp();
