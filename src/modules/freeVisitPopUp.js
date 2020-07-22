@@ -17,10 +17,12 @@ const freeVisitPopUp = () => {
     let target = event.target;
     if (target.classList.contains('close_icon')) {
       freeVisitPopUp.style.display = 'none';
+      freeVisitPopUp.style.opacity = '';
     } else {
       target = target.closest('.form-content');
       if (!target) {
         freeVisitPopUp.style.display = '';
+        freeVisitPopUp.style.opacity = '';
       }
     }
   });

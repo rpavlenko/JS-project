@@ -15,7 +15,11 @@ smoothscroll.polyfill();
 import selectClub from './modules/selectClub';
 import freeVisitPopUp from './modules/freeVisitPopUp';
 import callbackForm from './modules/callbackForm';
+import showGift from './modules/showGift';
 
 selectClub();
 freeVisitPopUp();
 callbackForm();
+showGift();
+
+

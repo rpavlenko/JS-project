@@ -14,6 +14,7 @@ const selectClub = () => {
       target = target.closest('.clubs-list');
       if (!target) {
         club.style.display = 'none';
+        club.style.opacity = '';
       }
     }
   });
