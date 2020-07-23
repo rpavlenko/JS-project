@@ -1429,30 +1429,31 @@ nav.popup-menu .close-menu-btn img {
   right: 0;
 }
 #gallery .gallery-slider .slider-dots {
-  left: 43%;
+  left: 41%;
   /* margin-left: -65px; */
-  bottom: 5%;
+  bottom: 8%;
 }
 
 .slider-dots .dot {
   cursor: pointer;
-  height: 16px;
-  width: 16px;
+  height: 5px;
+  width: 30px;
   margin: 0 10px;
-  border-radius: 50%;
-  border: solid #fff;
+  border-radius: 2px;
+  /* border: 1px solid #fff; */
+  background-color: #fff;
   display: inline-block;
   -webkit-transition: background-color, -webkit-transform 0.4s;
   transition: background-color, transform 0.4s, -webkit-transform 0.4s;
 }
 .slider-dots .dot-active {
-  background-color: #19b5fe;
+  background-color: #f4c71b;
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
 
 .slider-dots .dot:hover {
-  background-color: #53c6fe;
+  background-color: #f4c71b;
   -webkit-transform: scale(1.2);
   transform: scale(1.2);
 }
