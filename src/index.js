@@ -16,10 +16,12 @@ import selectClub from './modules/selectClub';
 import freeVisitPopUp from './modules/freeVisitPopUp';
 import callbackForm from './modules/callbackForm';
 import showGift from './modules/showGift';
+import sliders from './modules/sliders';
 
 selectClub();
 freeVisitPopUp();
 callbackForm();
 showGift();
+sliders();
 
 
