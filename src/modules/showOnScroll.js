@@ -8,7 +8,7 @@ const showOnScroll = () => {
   const headerElementsHeight = headHeight + topMenuHeight + mainSliderHeight;
   toTopArrow.style.display = 'none';
 
-  window.addEventListener('scroll', event => {
+  window.addEventListener('scroll', () => {
     if (window.scrollY > headerElementsHeight) {
       toTopArrow.style.display = 'block';
     } else {
