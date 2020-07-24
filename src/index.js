@@ -24,6 +24,8 @@ import showGift from './modules/showGift';
 import sliders from './modules/sliders';
 import sendForm from './modules/sendForm';
 import maskPhone from './modules/maskPhone';
+import showOnScroll from './modules/showOnScroll';
+import toggleBurgerMenu from './modules/toggleBurgerMenu';
 
 selectClub();
 modalOpen(freeVisitPopUp, freeVisitPopUpButton);
@@ -36,6 +38,8 @@ maskPhone('#callback_form1-phone');
 maskPhone('#callback_form2-phone');
 maskPhone('#callback_footer_form-phone');
 sendForm();
+showOnScroll();
+toggleBurgerMenu();
 
 
 
