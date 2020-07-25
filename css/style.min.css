@@ -1387,6 +1387,35 @@ nav.popup-menu .close-menu-btn img {
 .services-slider .slider-arrow.next {
   right: 2px;
 }
+
+#services {
+  position: relative;
+}
+
+#services .slider-arrow {
+  position: absolute;
+  top: 50%;
+  margin-top: -18px;
+  z-index: 100;
+  cursor: pointer;
+}
+#services .slider-arrow span {
+  display: block;
+  width: 36px;
+  height: 37px;
+  background-color: #f4c71b;
+  border-radius: 50%;
+  text-align: center;
+  padding-top: 11px;
+}
+
+#services .slider-arrow.prev {
+  left: 19%;
+}
+#services .slider-arrow.next {
+  right: 18%;
+}
+
 #gallery {
   background-color: #fff;
 }
@@ -1991,6 +2020,16 @@ p.personal-data input[type='checkbox']:checked + label:before {
   font-weight: 500;
   margin-top: 30px;
 }
+
+@media only screen and (max-width: 1700px) {
+  #services .slider-arrow.prev {
+    left: 8%;
+  }
+  #services .slider-arrow.next {
+    right: 5%;
+  }
+}
+
 @media only screen and (max-width: 1199px) {
   .services-slider .slider-arrow.prev {
     left: 25px;

@@ -22,6 +22,7 @@ import selectClub from './modules/selectClub';
 import modalOpen from './modules/modalOpen';
 import showGift from './modules/showGift';
 import sliders from './modules/sliders';
+import sliderCarousel from './modules/sliderCarousel';
 import sendForm from './modules/sendForm';
 import maskPhone from './modules/maskPhone';
 import showOnScroll from './modules/showOnScroll';
@@ -32,14 +33,15 @@ modalOpen(freeVisitPopUp, freeVisitPopUpButton);
 modalOpen(callbackForm, callbackFormpButton);
 showGift();
 sliders();
+sliderCarousel();
+sendForm();
+showOnScroll();
+toggleBurgerMenu();
 maskPhone('#phone');
 maskPhone('#callback_form-phone');
 maskPhone('#callback_form1-phone');
 maskPhone('#callback_form2-phone');
 maskPhone('#callback_footer_form-phone');
-sendForm();
-showOnScroll();
-toggleBurgerMenu();
 
 
 
