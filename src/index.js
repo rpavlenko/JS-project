@@ -27,6 +27,7 @@ import sendForm from './modules/sendForm';
 import maskPhone from './modules/maskPhone';
 import showOnScroll from './modules/showOnScroll';
 import toggleBurgerMenu from './modules/toggleBurgerMenu';
+import calculate from './modules/calculate';
 
 selectClub();
 modalOpen(freeVisitPopUp, freeVisitPopUpButton);
@@ -34,14 +35,16 @@ modalOpen(callbackForm, callbackFormpButton);
 showGift();
 sliders();
 sliderCarousel();
-sendForm();
-showOnScroll();
-toggleBurgerMenu();
+calculate();
 maskPhone('#phone');
 maskPhone('#callback_form-phone');
 maskPhone('#callback_form1-phone');
 maskPhone('#callback_form2-phone');
 maskPhone('#callback_footer_form-phone');
+sendForm();
+showOnScroll();
+toggleBurgerMenu();
+
 
 
 
