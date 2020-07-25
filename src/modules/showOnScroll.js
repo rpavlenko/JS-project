@@ -22,6 +22,16 @@ const showOnScroll = () => {
     }
   });
 
+  // smooth scroll
+  toTopArrow.addEventListener('click', event => {
+    event.preventDefault();
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  });
+
 };
 
 export default showOnScroll;

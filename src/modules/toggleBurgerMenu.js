@@ -18,13 +18,19 @@ const toggleBurgerMenu = () => {
     if (target.matches('ul>li>a') && (target.closest('.top-menu') || target.closest('.popup-menu'))) {
       // smooth scroll
       target = target.closest('ul>li');
-      const anchor = target.querySelector('a[href*="#"]');
-      event.preventDefault();
-      const blockID = anchor.getAttribute('href');
-      document.querySelector('' + blockID).scrollIntoView({
-        behavior: "smooth",
-        block: "start"
-      });
+      if (target) {
+        const anchor = target.querySelector('a[href*="#"]');
+        event.preventDefault();
+        const blockID = anchor.getAttribute('href');
+        try {
+          document.querySelector('' + blockID).scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+          });
+        } catch (err) {
+          console.warn('blockID doesnt exists');
+        }
+      }
     }
   });
 };

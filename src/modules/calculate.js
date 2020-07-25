@@ -20,32 +20,34 @@ const calculate = () => {
     12: 14990,
   };
 
-  priceMessage.textContent = 1999;
-  const discount = 30;
+  if (cardForm) {
+    priceMessage.textContent = 1999;
+    const discount = 30;
 
-  const addDiscount = (discountValue, promocodeInput) => {
-    if (promocodeInput.value && promocodeInput.value === 'ТЕЛО2019') {
-      priceMessage.textContent = Math.floor(priceMessage.textContent * (1 - (discountValue / 100)));
-    }
-  };
-
-  cardForm.addEventListener('input', () => {
-    let selectedPeriod;
-
-    time.forEach(item => {
-      if (item.checked && cardMozaikaCheckbox.checked) {
-        selectedPeriod = item.value;
-        priceMessage.textContent = mozaikaClub[selectedPeriod];
-        addDiscount(discount, promocode);
-
-      } else if (item.checked && cardSchelkovoCheckbox.checked) {
-        selectedPeriod = item.value;
-        priceMessage.textContent = schelkovoClub[selectedPeriod];
-        addDiscount(discount, promocode);
+    const addDiscount = (discountValue, promocodeInput) => {
+      if (promocodeInput.value && promocodeInput.value === 'ТЕЛО2019') {
+        priceMessage.textContent = Math.floor(priceMessage.textContent * (1 - (discountValue / 100)));
       }
-    });
-  });
+    };
 
+    cardForm.addEventListener('input', () => {
+      let selectedPeriod;
+
+      time.forEach(item => {
+        if (item.checked && cardMozaikaCheckbox.checked) {
+          selectedPeriod = item.value;
+          priceMessage.textContent = mozaikaClub[selectedPeriod];
+          addDiscount(discount, promocode);
+
+        } else if (item.checked && cardSchelkovoCheckbox.checked) {
+          selectedPeriod = item.value;
+          priceMessage.textContent = schelkovoClub[selectedPeriod];
+          addDiscount(discount, promocode);
+        }
+      });
+    });
+
+  }
 };
 
 export default calculate;

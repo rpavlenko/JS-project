@@ -46,8 +46,11 @@ const sendForm = () => {
 
   document.addEventListener('submit', event => {
     let target = event.target;
-    const checkbox = target.querySelector('input[type = "checkbox"]'),
-      personalData = target.querySelector('.personal-data');
+    const checkbox = target.querySelector('input[type="checkbox"]'),
+      personalData = target.querySelector('.personal-data'),
+      clubCheckboxMozaika = document.getElementById('footer_leto_mozaika'),
+      clubCheckboxSchelkovo = document.getElementById('footer_leto_schelkovo'),
+      chooseClub = target.querySelector('.choose-club');
 
     event.preventDefault();
 
@@ -56,6 +59,15 @@ const sendForm = () => {
         personalData.appendChild(statusMessage);
         statusMessage.textContent = 'Необходимо подтвердить согласие!';
         statusMessage.style.padding = "2px 0";
+        return;
+      }
+    }
+
+    if (target.id === 'footer_form') {
+      if (!clubCheckboxMozaika.checked && !clubCheckboxSchelkovo.checked) {
+        statusMessage.textContent = 'Необходимо выбрать клуб!';
+        statusMessage.style.padding = "2px 0";
+        chooseClub.appendChild(statusMessage);
         return;
       }
     }
