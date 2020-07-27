@@ -4,6 +4,8 @@ const sendForm = () => {
     successPopUp = document.getElementById('thanks'),
     successPopUpContent = document.querySelector('.form-thanks-message'),
     thanksMessageTitle = document.querySelector('.thanks-message-title'),
+    cardForm = document.getElementById('card-form'),
+    priceMessage = document.getElementById('price-total'),
     elementsForm = [];
 
   statusMessage.style.cssText = 'font-size: 1rem; color: #ffd11a;';
@@ -122,6 +124,10 @@ const sendForm = () => {
       }
     });
 
+
+    if (cardForm) {
+      priceMessage.textContent = 1999;
+    }
     target.reset();
   });
 };
